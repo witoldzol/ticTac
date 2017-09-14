@@ -1,0 +1,22 @@
+{
+  "name": "tictac",
+  "version": "1.0.0",
+  "description": "ticTac_game",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/witoldzol/ticTac.git"
+  },
+  "keywords": [
+    "FCC_project"
+  ],
+  "author": "Witold Zolnowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/witoldzol/ticTac/issues"
+  },
+  "homepage": "https://github.com/witoldzol/ticTac#readme"
+}
