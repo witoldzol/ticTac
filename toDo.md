@@ -1,0 +1,2 @@
+-set up pug for webpack
+-set up server for webpack
