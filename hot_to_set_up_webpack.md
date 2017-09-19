@@ -79,7 +79,20 @@
 		plugins: [
 			new ExtractTextPlugin('./app.css'),
 
-5) install babel :
-	-core: 					npm install --save-dev babel-loader babel-core
-	-plugin for ES2015: 	npm install babel-preset-env --save-dev
-	-css/sass				npm install -D sass-loader style-loadecss-loader
+9) install server
+	
+	//install
+		npm i webpack-dev-server -D
+
+	//update package.JSON !
+		change the script to:
+
+	//update webpack config
+		devServer: {
+			contentBase: path.join(__dirname, 'dist'),
+			compress: true,
+			port: 9000,
+			stats: 'errors-only', //limits amount of crap displayed when u run script
+			open: true, //auto runs website
+
+		},
