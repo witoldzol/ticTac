@@ -96,3 +96,29 @@
 			open: true, //auto runs website
 
 		},
+
+10) install pug
+
+	//install
+
+		npm i -D pug pug-loader pug-html-loader //not sure if we need last one
+
+	//webpack config
+		//update template path
+
+			new HtmlWebpackPlugin({
+				title: 'TicTac Game - FCC project',
+				minify: {
+					collapseWhitespace: false
+				},
+				template: './src/index.pug', //load a custom template 
+			}),
+
+	// update loaders 
+
+		{
+			test: /\.pug$/,
+			use: ['pug-loader','pug-html-loader']
+		}
+
+// ------- congrats ! you are ready to code...seriously! go on!

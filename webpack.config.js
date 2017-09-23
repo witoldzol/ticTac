@@ -7,7 +7,7 @@ module.exports = {
 	entry: './src/app.js',
 	output: {
 		path: __dirname + '/dist',
-		filename: 'app.bundle.js',
+		filename: '[name].bundle.js',
 	},
 	module:{
  		rules: [
@@ -19,6 +19,10 @@ module.exports = {
  						fallback: 'style-loader',
  						use: ['css-loader', 'sass-loader'],
  					}),
+ 			},
+ 			{
+ 				test: /\.pug$/,
+ 				use: ['pug-loader','pug-html-loader']
  			}
  		]
 
@@ -38,7 +42,7 @@ module.exports = {
 			minify: {
 				collapseWhitespace: false
 			},
-			template: './src/index_template.ejs', //load a custom template 
+			template: './src/index.pug', //load a custom template 
 		}),
 
 	]
